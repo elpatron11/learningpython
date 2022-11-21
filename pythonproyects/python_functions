@@ -1,0 +1,24 @@
+def hello():
+    print("Hello user")
+
+
+def pack(item1, item2, item3):
+    return item1, item2, item3
+
+
+def eatlunch(list):
+    if (list):
+        for i in list:
+            if i == list[0]:
+                print("first i eat" + i)
+            else:
+                print("then i eat" + i)
+
+    else:
+        print("list is empty")
+
+
+food = ["apples", "orange", "pinapple"]
+hello()
+print(pack("apple", "carrote", "orange"))
+eatlunch(food)
