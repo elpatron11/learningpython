@@ -40,18 +40,22 @@ class Podracer:
 
     def repair(self):
         self.condition = "repaired"
+        return self.condition
 
 
 class AnakinsPod(Podracer):
     def boost(self):
         self.max_speed = self.max_speed*2
+        return self.max_speed
 
 
 class SebulbasPod(Podracer):
     def flame_jet(self):
         self.condition = "trashed"
+        return self.condition
 
 
-print(Podracer(50, "new", 100))
+Podracer1 = Podracer(50, "new", 100)
+print(Podracer1)
 
-print(Podracer.repair())
+print(Podracer1.repair())
